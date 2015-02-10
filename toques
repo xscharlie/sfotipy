@@ -1,0 +1,13 @@
+Para compilar el archivo stylus y guardarlo en la carpeta css
+
+stylus -w stylus/style.styl -o css/ -c 
+
+Es nesario modificar la configuracion global del apache, cambiando
+
+<Directory />
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
+</Directory>
+
+a granted la linea require
